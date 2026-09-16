@@ -1,0 +1,48 @@
+body{ background-color:lightblue;
+    background-image: url('images/logo.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:100% 100%;
+}
+h1{text-align:center;
+    font-family:verdana;
+}
+h2{text-align:center;
+    font-family:verdana;
+    font-size:20px;
+}
+p{text-align:center;
+  font-family:verdana;
+  font-size:15px;
+}
+a:visited{ color:black;
+            background-color:transparent;
+            text-decoration:underline;
+        }
+nav {
+    text-align: center;
+     padding: 20px;
+}
+.programs {
+    width: 80%;
+    margin: 30px auto;
+}
+
+details {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+summary {
+    font-family: Verdana;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details ul {
+    font-family: Verdana;
+    line-height: 2;
+}
