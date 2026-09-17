@@ -1,15 +1,18 @@
+*{
+    font-family: Verdana;
+}
 body{ background-color:darkblue;
     color:white;
 }
 h1{text-align:center;
-    font-family:verdana;
+    font-family: Verdana;
 }
 h2{text-align:center;
-    font-family:verdana;
+    font-family: Verdana;
     font-size:20px;
 }
 p{text-align:center;
-  font-family:verdana;
+  font-family: Verdana;
   font-size:15px;
 }
 a:visited{ color:white;
