@@ -1,8 +1,5 @@
-body{ background-color:lightblue;
-    background-image: url('images/logo.jpeg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size:100% 100%;
+body{ background-color:darkblue;
+    color:white;
 }
 h1{text-align:center;
     font-family:verdana;
@@ -15,7 +12,7 @@ p{text-align:center;
   font-family:verdana;
   font-size:15px;
 }
-a:visited{ color:black;
+a:visited{ color:white;
             background-color:transparent;
             text-decoration:underline;
         }
@@ -29,11 +26,11 @@ nav {
 }
 
 details {
-    background-color: white;
+    background-color:white;
     margin-bottom: 15px;
     padding: 15px;
     border-radius: 10px;
-    background-color: lightblue;
+    color:darkblue;
 }
 
 summary {
@@ -41,18 +38,20 @@ summary {
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-    background-color: lightblue;
+    background-color:white;
+    color:darkblue;
 }
 
 details ul {
     font-family: Verdana;
     line-height: 2;
-    color: black;
+    color: darkblue;
 }
 table th,td{
     border:1px solid black;
     border-collapse:collapse;
 }
 th,td{
-    background-color:lightblue;
+    background-color:white;
+    color:darkblue;
 }
