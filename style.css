@@ -81,3 +81,15 @@ nav li a {
 nav li a:hover {
     background-color: #4169E1;
 }
+.alumni-card{
+    background-color: white;
+    color:darkblue;
+    width:70%;
+    margin:25px auto;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+}
+.alumni-card .class{
+    color:grey;
+}
