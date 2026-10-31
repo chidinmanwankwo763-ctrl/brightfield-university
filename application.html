@@ -20,7 +20,7 @@
     <h1>Application Form</h1>
 
     <p>Welcome to Brightfield University. Please complete the application form below to begin your admission process.</p>
-<form class="application-form">
+<form class="application-form" id="applicationForm">
 <fieldset>
     <legend>Personal Information</legend>
     <label for="fullname">Full Name:</label>
@@ -117,8 +117,41 @@
     <input type="file" id="result" name="result" accept=".pdf,.jpg,.jpeg,.png" required><br><br>
 
 </fieldset>
-</form>
 <br>
 <button type="submit">Submit Application</button>
+</form>
+<script>
+    const applicationForm = document.getElementById('applicationForm');
+console.log("Application form script is working!");
+    applicationForm.addEventListener('submit', async function(event) {
+        event.preventDefault();
+
+        const formData = new FormData(applicationForm);
+        const applicationData = Object.fromEntries(formData.entries());
+
+        try {
+            const response = await fetch('/apply', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(applicationData)
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                alert(result.message);
+                applicationForm.reset();
+            } else {
+                alert('Something went wrong. Please try again.');
+            }
+
+        } catch (error) {
+            alert('Unable to submit your application. Please try again.');
+            console.error(error);
+        }
+    });
+</script>
        </body>
        </html>
